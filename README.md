@@ -32,7 +32,7 @@ The **Active Directory User & Group Management Script** is a PowerShell script d
 
 ## XML Data Format (Sample users.xml)
 
-`
+```xml
 <root>
 	<user>
 		<account>Chico</account>
@@ -47,5 +47,6 @@ The **Active Directory User & Group Management Script** is a PowerShell script d
 			<group>GGMusicians</group>
 		</memberOf>
 	</user>
+	<!-- More user entries can follow -->
 </root>
-`
+
