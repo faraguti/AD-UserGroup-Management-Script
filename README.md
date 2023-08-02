@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/faraguti/ps-guessing-game/assets/5418256/f698e140-1d83-46c3-a121-64b8451cc090" height="100%" width="100%">
+</p>
+
 # Active Directory User & Group Management Script
 
 ## Overview
