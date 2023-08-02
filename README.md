@@ -31,6 +31,7 @@ The **Active Directory User & Group Management Script** is a PowerShell script d
    `Please enter file path: C:\Path\To\users.xml`
 
 ## XML Data Format (Sample users.xml)
+
 `
 <root>
 	<user>
@@ -46,6 +47,5 @@ The **Active Directory User & Group Management Script** is a PowerShell script d
 			<group>GGMusicians</group>
 		</memberOf>
 	</user>
-	<!-- More user entries can follow -->
 </root>
 `
