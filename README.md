@@ -47,6 +47,5 @@ The **Active Directory User & Group Management Script** is a PowerShell script d
 			<group>GGMusicians</group>
 		</memberOf>
 	</user>
-	<!-- More user entries can follow -->
 </root>
 
