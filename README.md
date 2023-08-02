@@ -49,4 +49,36 @@ The **Active Directory User & Group Management Script** is a PowerShell script d
 		</memberOf>
 	</user>
 </root>
+```
+</br>
+
+## Script Functionality
+
+The script performs the following tasks based on the XML file specified by the user:
+
+1. For each user entry in the XML file, the script:
+   - Creates the specified organizational unit (OU) if it does not exist.
+   - Creates the user account in the OU with attributes from the XML data.
+   - Sets the user password using `ConvertTo-SecureString`.
+   - Enables the user account and requires a password change on the next login.
+
+2. For each group mentioned in the `<memberOf>` node of the XML file, the script:
+   - Creates the group if it does not already exist.
+   - Adds the user to the group.
+
+The script provides meaningful output as it executes, informing the user about the actions taken during the user and group management operations.
+
+## Assumptions
+
+Before running the script, the following assumptions are made:
+
+- The computer running the script is part of the domain that needs to be managed.
+- The script user has appropriate permissions to perform Active Directory tasks.
+- The manager mentioned in the XML data is one of the users listed in the file.
+
+## Notes
+
+- The script is designed to handle errors appropriately using PowerShell's built-in error handling and `Try`-`Catch` blocks.
+- The user is guided through the process with input prompts and informative output messages.
+- The script allows for the automation of user and group management, saving time and reducing manual errors.
 
