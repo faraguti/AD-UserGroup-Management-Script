@@ -29,3 +29,23 @@ The **Active Directory User & Group Management Script** is a PowerShell script d
    ./Manage-Users.ps1
    ```
    `Please enter file path: C:\Path\To\users.xml`
+
+## XML Data Format (Sample users.xml)
+`
+<root>
+	<user>
+		<account>Chico</account>
+		<firstname>Leonard</firstname>
+		<lastname>Marx</lastname>
+		<description>Pianist</description>
+		<password>Password1</password>
+		<manager></manager>
+		<ou>comedians</ou>
+		<memberOf>
+			<group>Marx Brothers</group>
+			<group>GGMusicians</group>
+		</memberOf>
+	</user>
+	<!-- More user entries can follow -->
+</root>
+`
