@@ -23,13 +23,13 @@ The **Active Directory User & Group Management Script** is a PowerShell script d
 
 1. Run the `Create-ManageUsersTestfile.ps1` script to create a test XML file with user data (e.g., users.xml).
    
-   ```
+   ```PowerShell
    Create-ManageUsersTestfile.ps1 users.xml
    ```
 
 2. Execute the `AD-UserGroup-Management.ps1` script and provide the filename (including path) of the XML file as input when prompted.
    
-   ```
+   ```PowerShell
    ./Manage-Users.ps1
    ```
    `Please enter file path: C:\Path\To\users.xml`
